@@ -1,0 +1,23 @@
+{
+  "name": "translate-api",
+  "private": true,
+  "version": "1.0.1",
+  "description": "",
+  "main": "src",
+  "scripts": {
+    "dev": "nodemon src",
+    "start": "node src"
+  },
+  "keywords": [],
+  "author": "Josh Terrill",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "google-translate-api": "^2.3.0",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}

@@ -1,0 +1,65 @@
+html, body {
+  background-color: #222;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 300;
+  font-size: 56px;
+  margin-bottom: 0;
+}
+
+div.container {
+  text-align: center;
+  margin: auto;
+  width: 700px;
+}
+
+.mdl-selectfield__placeholder, .mdl-selectfield__label {
+  color: #fff;
+}
+
+.mdl-selectfield__select, .mdl-textfield__input {
+  border-bottom: 1px solid rgb(110, 99, 130) !important;
+}
+
+.mdl-selectfield--floating-label.is-focused .mdl-selectfield__label, .mdl-selectfield--floating-label.is-focused select.mdl-textfield__input {
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgb(110, 99, 130) !important;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  color: #8c66cf;
+}
+
+.mic {
+  color: #fff;
+  position:relative;
+  margin: 2% auto;
+  background-color: transparent;
+  border: 2px #8c66cf solid;
+  border-radius:50%;
+  width:10em; height:10em;
+  cursor: pointer;
+}
+
+.mic i {
+  font-size: 8em;
+}
+
+.mic i:before {
+  vertical-align: middle;
+}
+
+.pulsate-css {
+  background-color: #8c66cf;
+  border: 2px #b68cff solid;
+}
+
+.mic.pulsate-css i {
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite; 
+  opacity: 0.0;
+}

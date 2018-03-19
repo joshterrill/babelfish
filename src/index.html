@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Babelfish</title>
+    <link rel="stylesheet" href="http://tilomitra.github.io/infinite/infinite.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-pink.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/kybarg/mdl-selectfield/mdl-menu-implementation/mdl-selectfield.min.css">    
+    <link rel="stylesheet" href="/public/styles.css" />
+
+    <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.rawgit.com/kybarg/mdl-selectfield/mdl-menu-implementation/mdl-selectfield.min.js"></script>    
+    <script defer type="text/javascript" src="/public/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Babelfish</h1>
+      <div id="mic" class="mic" onmousedown="start(event)" onmouseup="stop()">
+          <i class="fa fa-microphone"></i>
+      </div>
+      <div class="content">
+        <div class="from-language">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="from_select_language" name="from_select_language" onchange="updateFromCountry()"></select>
+            <label class="mdl-textfield__label" for="from_select_language">Spoken Language</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="from_select_dialect" name="from_select_dialect"></select>
+            <label class="mdl-textfield__label" for="from_select_dialect">Dialect</label>
+          </div>
+        </div>
+        <div class="to-language">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="to_select_language" name="to_select_language" onchange="updateToCountry()"></select>
+            <label class="mdl-textfield__label" for="to_select_language">Translated Language</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="to_select_dialect" name="to_select_dialect"></select>
+            <label class="mdl-textfield__label" for="to_select_dialect">Dialect</label>
+          </div>
+        </div>
+      </div>
+      <div id="results">
+        <span id="final_span" class="final"></span>
+        <span id="interim_span" class="interim"></span>
+      </div>
+    </div>
+  </body>
+</html>
