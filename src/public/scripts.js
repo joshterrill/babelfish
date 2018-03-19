@@ -222,3 +222,18 @@ function apiRequest(url, data) {
   })
   .then(response => response.json())
 }
+
+function switchLanguages() {
+  const fromSelectLanguage = from_select_language.selectedIndex;
+  const toSelectLanguage = to_select_language.selectedIndex;
+  const fromSelectDialect = from_select_dialect.selectedIndex;
+  const toSelectDialect = to_select_dialect.selectedIndex;
+
+  from_select_language.selectedIndex = toSelectLanguage;
+  to_select_language.selectedIndex = fromSelectLanguage;
+  updateFromCountry();
+  updateToCountry();
+  from_select_dialect.selectedIndex = toSelectDialect;
+  to_select_dialect.selectedIndex = fromSelectDialect;
+
+}

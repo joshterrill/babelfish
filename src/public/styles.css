@@ -63,3 +63,9 @@ div.container {
   animation-iteration-count: infinite; 
   opacity: 0.0;
 }
+
+.switch-languages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
